@@ -95,7 +95,7 @@
 
    
 
-   function positiveButtonProductHandler(responseReceiver,unitPrice, countReceive){ 
+   function ProductHandler(responseReceiver,unitPrice, countReceive){ 
       count=parseInt(document.getElementById("count-"+countReceive).value); 
       console.log(count);
       if (responseReceiver=="positive"){
@@ -117,19 +117,19 @@
 
       
      positiveIphone.addEventListener("click",function(){
-        positiveButtonProductHandler("positive",unitPriceIphone,"iphone");
+        ProductHandler("positive",unitPriceIphone,"iphone");
      })
 
      negativeIphone.addEventListener("click",function(){
-        positiveButtonProductHandler("negative",unitPriceIphone,"iphone");
+        ProductHandler("negative",unitPriceIphone,"iphone");
      })
 
      positiveCase.addEventListener("click",function(){
-        positiveButtonProductHandler("positive",unitPriceCase,"case");
+        ProductHandler("positive",unitPriceCase,"case");
      })
 
      negativeCase.addEventListener("click",function(){
-        positiveButtonProductHandler("negative",unitPriceCase,"case");
+        ProductHandler("negative",unitPriceCase,"case");
      })
 
   </script>
